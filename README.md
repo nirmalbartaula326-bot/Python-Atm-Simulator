@@ -27,7 +27,7 @@
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/your-username/atm-card-manager.git
+git clone https://github.com/piratewave32/atm-card-manager.git
 cd atm-card-manager
 ```
 
