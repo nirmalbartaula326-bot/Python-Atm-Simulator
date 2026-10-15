@@ -1,0 +1,63 @@
+         #if the insert card has the same thing like the card_number in card and the data base so that display all the things      
+class atm_card():  
+        def __init__ (self,cardholder_name,card_number,expire_date,card_type,amount,pin):
+               self.cardholder_name = cardholder_name
+               self.card_number = card_number
+               self.expire_date = expire_date
+               self.card_type = card_type
+               self.amount = amount
+               self.pin = pin
+               
+again =True
+while again:
+ creating_account = input("Enter new account for creating account:").lower().strip()
+ if creating_account == "new account":
+        cardholder_name = input("Enter name of Cardholder:")
+        card_number = input("Enter card number:")
+        expire_date = (input("Enter the Expire date:"))
+        card_type = input("Enter card type:")
+        pin = input("enter pin:")
+        try:
+         amount = float(input("Enter the amount:"))
+        except ValueError:
+          print("Amount mustnot be in string.")
+          continue
+        print(f"Cardholder Name = {cardholder_name},Card Number ={card_number}, Expire Date = {expire_date},Card type = {card_type },Pin = {pin},Amount = {amount} ")
+        
+        
+        for_conformation = input("Enter yes if everything is correct:")
+        if(for_conformation=="yes"):
+          with open("Atmcard_info.txt","a") as file:
+            file.write(f"Cardholder Name = {cardholder_name},Card Number = {card_number}, Expire Date = {expire_date},Card type ={ card_type} ,Pin ={pin},Amount = {amount}\n")
+            print("Account saved")
+        else:
+          print("Info not saved\nPlease enter the data again\n")
+ else:
+   again = False
+   
+   
+  
+
+already_created_account = input("Enter yes for Already created account:").lower().strip()
+if(already_created_account == "yes"):      
+
+ print("For already created account")
+ insert_card_number = input("Enter the card number:")
+
+ #the creation of the is to create class
+
+ found = False
+ try:
+  with open("Atmcard_info.txt", "r") as file:
+   for line in file:
+    if f"Card Number = {insert_card_number}," in line:
+     print(line)
+     print("Info found")
+     found = True
+     break
+   else:
+    if not found:
+     print("Card not found")
+ except FileNotFoundError:
+   print("No Account created yet")
+    
