@@ -1,0 +1,10 @@
+Cardholder Name = Ram Sharma,Card Number = 1234, Expire Date = 12/28,Card type = debit ,Pin = 1111,Amount = 5000.0
+Cardholder Name = Sita Thapa,Card Number = 5678, Expire Date = 06/27,Card type = credit ,Pin = 2222,Amount = 12500.5
+Cardholder Name = Hari Karki,Card Number = 9012, Expire Date = 03/29,Card type = debit ,Pin = 3333,Amount = 800.0
+Cardholder Name = Gita Rai,Card Number = 3456, Expire Date = 09/26,Card type = credit ,Pin = 4444,Amount = 22000.0
+Cardholder Name = Bikash Gurung,Card Number = 7890, Expire Date = 01/30,Card type = debit ,Pin = 5555,Amount = 3150.75
+Cardholder Name = Anita Shrestha,Card Number = 2468, Expire Date = 11/27,Card type = debit ,Pin = 6666,Amount = 9800.0
+Cardholder Name = Suresh Adhikari,Card Number = 1357, Expire Date = 04/28,Card type = credit ,Pin = 7777,Amount = 45000.0
+Cardholder Name = Maya Tamang,Card Number = 8642, Expire Date = 08/29,Card type = debit ,Pin = 8888,Amount = 1200.25
+Cardholder Name = Prakash Joshi,Card Number = 1928, Expire Date = 02/31,Card type = credit ,Pin = 9999,Amount = 15750.0
+Cardholder Name = Rita Magar,Card Number = 4731, Expire Date = 10/26,Card type = debit ,Pin = 1212,Amount = 6400.0
